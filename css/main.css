@@ -1,0 +1,19 @@
+.frame {
+  max-width: 1200px;
+  margin: auto; }
+
+.nav {
+  float: left; }
+
+#tree {
+  width: 260px; }
+
+.window {
+  margin-left: 260px; }
+
+.input {
+  position: absolute;
+  border: 1px solid #333; }
+
+.control {
+  border: 1px solid #333; }
