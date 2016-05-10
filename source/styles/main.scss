@@ -14,11 +14,29 @@
 
 .window {
   margin-left: 260px;
+  .timeInfo {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #888;
+  }
 }
 
 .input {
   position: absolute;
   border: 1px solid #333;
+  .timeSource {
+    border: 1px solid #888;
+    margin: 5px;
+    padding-left: 5px;
+    p {
+      display: block;
+      float: left;
+    }
+    input {
+      width: 500px;
+    }
+  }
 }
 
 .control {
