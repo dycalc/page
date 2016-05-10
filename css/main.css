@@ -10,10 +10,24 @@
 
 .window {
   margin-left: 260px; }
+  .window .timeInfo {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #888; }
 
 .input {
   position: absolute;
   border: 1px solid #333; }
+  .input .timeSource {
+    border: 1px solid #888;
+    margin: 5px;
+    padding-left: 5px; }
+    .input .timeSource p {
+      display: block;
+      float: left; }
+    .input .timeSource input {
+      width: 500px; }
 
 .control {
   border: 1px solid #333; }

@@ -5,9 +5,13 @@
   <title>PeakInfo</title>
   <script src="./assets/jquery-1.4.4.min.js" charset="utf-8"></script>
   <script src="./assets/jquery.ztree.core.min.js" charset="utf-8"></script>
+  <script src="./assets/jquery.jqGrid.min.js" charset="utf-8"></script>
   <script src="./js/useZtree.js" charset="utf-8"></script>
+  <script src="./js/useGrid.js" charset="utf-8"></script>
   <link rel="stylesheet" href="./css/zTreeStyle/zTreeStyle.css">
+  <link rel="stylesheet" href="./css/ui.jqgrid.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/jquery-ui-1.8.16.custom.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
   <div class="frame">
@@ -16,13 +20,64 @@
     </div>
     <div class="window">
       <div class="control">
-        <h1>save</h1>
+        <button type="button" name="button">保存</button>
       </div>
       <div class="input" id="time">
-        <h1>time</h1>
+        <div class="timeSource">
+          <h5>时间触发源</h5>
+          <form>触发源名称
+            <input type="text" name="name">
+          </form>
+          </br>
+          <form>触发源描述
+            <input type="text" name="detail">
+          </form>
+        </div>
+        <div class="timeInfo">
+          <h5>触发信息</h5>
+          <p><input type="radio" name="name" value="" id="once">一次</p>
+          <p><input type="radio" name="name" value="" id="continue">连续</p>
+          <p><input type="radio" name="name" value="" id="weak">每周</p>
+          <p><input type="radio" name="name" value="" id="mouth">每月</p>
+          <p><input type="radio" name="name" value="" id="spec">特殊日</p>
+        </div>
+        <div class="day">
+          <p><input type="checkbox" name="name" value="" id="day1">星期一</p>
+          <p><input type="checkbox" name="name" value="" id="day2">星期二</p>
+          <p><input type="checkbox" name="name" value="" id="day3">星期三</p>
+          <p><input type="checkbox" name="name" value="" id="day4">星期四</p>
+          <p><input type="checkbox" name="name" value="" id="day5">星期五</p>
+          <p><input type="checkbox" name="name" value="" id="day6">星期六</p>
+          <p><input type="checkbox" name="name" value="" id="day7">星期日</p>
+        </div>
+        <div class="time">
+
+        </div>
+        <table id="rowed5"></table>
       </div>
       <div class="input" id="flip">
-        <h1>flip</h1>
+        <div class="flipSource">
+          <h5>事件触发源</h5>
+          <form>触发源名称
+            <input type="text" name="name" value="">
+          </form>
+          <form>触发源描述
+            <input type="text" name="name" value="">
+          </form>
+        </div>
+        <div class="flipinfo">
+          <h5>触发源信息</h5>
+          <form>数据源
+            <input type="text" name="name" value="">
+          </form>
+          <form>事件类型
+            <input type="text" name="name" value="">
+          </form>
+          <form>持续时间
+            <input type="text" name="name" value="">
+          </form>
+        </div>
+        <table id="flipTable"></table>
       </div>
     </div>
   </div>

@@ -26,10 +26,12 @@ var setting = {
         if (treeNode.type == "time") {
           $("#flip").hide();
           $("#time").show();
+          $("#flip").css("display","none");
           return true;
         } else {
           $("#time").hide();
           $("#flip").show();
+          $("#time").css("display","none");
           return true;
         }
       }
@@ -107,3 +109,5 @@ var zNodes =[
 		if (h < 530) h = 530;
 		demoIframe.height(h);
 	}
+
+// 隐藏div
