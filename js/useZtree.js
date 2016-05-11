@@ -26,12 +26,10 @@ var setting = {
         if (treeNode.type == "time") {
           $("#flip").hide();
           $("#time").show();
-          $("#flip").css("display","none");
           return true;
         } else {
           $("#time").hide();
           $("#flip").show();
-          $("#time").css("display","none");
           return true;
         }
       }
@@ -111,3 +109,7 @@ var zNodes =[
 	}
 
 // 隐藏div
+window.onload=function(){
+  $("#flip").hide();
+  $("#time").hide();
+}
